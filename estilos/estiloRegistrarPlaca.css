@@ -1,0 +1,104 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegurar que el body ocupe todo el alto para el footer fijo abajo */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ----- HEADER ----- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgb(181, 11, 11); /* Azul oscuro */
+    color: white;
+}
+
+.div-imagen img {
+    width: 50px;
+    height: 50px;
+}
+
+.texto-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* ----- NAV ----- */
+nav {
+    padding: 20px;
+    text-align: center;
+    background-color: #e8eaf6;
+    color: rgb(126, 35, 26);
+}
+
+/* ----- MAIN y FORMULARIO ----- */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.contenedor-formulario {
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: #e3f2fd;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+.contenedor-formulario:hover {
+    transform: scale(1.02);
+    background-color: #bbdefb;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.formulario label {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(126, 35, 26);
+}
+
+.formulario input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(126, 35, 26);
+    color: white;
+    font-size: 14px;
+}

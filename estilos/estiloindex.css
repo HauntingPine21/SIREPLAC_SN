@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body {
+    background-color: #F5F5F5; /* Gris claro */
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(126, 35, 26); /* Azul oscuro */
+
+}
+
+/* Imagen alineada a la izquierda */
+.div-imagen img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Texto centrado dentro del espacio restante */
+.texto-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+    color: white;
+    padding: 10px;
+    
+}
+
+/* ---------- NAV ---------- */
+nav {
+    padding-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---------- BOTONES ---------- */
+.botones {
+    display: flex;
+    margin: 50px;
+    padding: 60px;
+    background-color: rgb(255, 206, 203); /* Azul muy claro */
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones .botones-contenedor {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(168, 134, 123);
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.botones .botones-contenedor button {
+    margin: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f66464; /* Azul claro */
+    color: white;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.botones .botones-contenedor button:hover {
+    transform: scale(1.05);
+    background-color: #512007; /* Verde suave */
+    cursor: pointer;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: rgb(126, 26, 26);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
