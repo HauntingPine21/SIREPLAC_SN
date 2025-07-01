@@ -46,7 +46,7 @@ main {
     padding: 30px 10px;
 }
 .formulario{
-     background: rgb(239, 54, 54);
+    background: rgb(239, 54, 54);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -96,6 +96,7 @@ form .contraseña{
     border-bottom: 2px solid rgb(182, 41, 41);
     margin: 30px 0;
 }
+
 .contraseña input{
  width: 100%;
  padding: 0 5px;
@@ -124,4 +125,27 @@ form .contraseña{
     color: white;
     opacity: 0;
     transition: 0.3s ease;
+}
+
+.accion-enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accion-enviar input {
+    margin: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f66464; /* Azul claro */
+    color: white;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.accion-enviar input:hover {
+    transform: scale(1.05);
+    background-color: #512007; /* Verde suave */
+    cursor: pointer;
 }
