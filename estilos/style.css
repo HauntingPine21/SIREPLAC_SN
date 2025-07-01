@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegurar que el body ocupe todo el alto para el footer fijo abajo */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ----- HEADER ----- */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: rgb(181, 11, 11); /* Azul oscuro */
+    color: white;
+}
+
+.div-imagen img {
+    width: 50px;
+    height: 50px;
+}
+
+.texto-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+.formulario{
+     background: rgb(239, 54, 54);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.formulario h1{
+ text-align: center;
+ padding: 0 40px;
+ border-bottom: 1px solid rgb(209, 41, 41);
+} 
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+    border-bottom: 2px solid rgb(182, 41, 41);
+    margin: 30px 0;
+
+}
+.username input{
+ width: 100%;
+ padding: 0 5px;
+ height: 40px;
+ font-size: 16px;
+ border: black;
+ background: rgb(255, 200, 200);
+ outline: black;
+}
+.username label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(227, 227, 227);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid rgb(182, 41, 41);
+    margin: 30px 0;
+}
+.contraseña input{
+ width: 100%;
+ padding: 0 5px;
+ height: 40px;
+ font-size: 16px;
+ border: black;
+ background: rgb(255, 200, 200);
+ outline: black;
+}
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(227, 227, 227);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.username input:focus ~ label,
+.username input:valid ~ label,
+.contraseña input:focus ~ label,
+.contraseña input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: white;
+    opacity: 0;
+    transition: 0.3s ease;
+}
